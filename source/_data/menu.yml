@@ -12,12 +12,6 @@
 - name: 归档
   icon: fas fa-archive
   url: archives/
-# - name: 友链
-#   icon: fas fa-link
-#   url: friends/
-# - name: 关于
-#   icon: fas fa-info-circle
-#   url: about/
 - name: 更多
   icon: fas fa-ellipsis-v
   rows:
@@ -27,26 +21,7 @@
     - name: 主题源码
       url: https://github.com/wongqingbin/blog
       icon: fab fa-github
+      target: _blank
     - name: 友情链接
       # url: friends/ # 无url的为不可点击项
       icon: fas fa-link
-    # - name: hr # 分割线 只在子菜单有效
-    # - name: 有疑问？
-    #   rows:
-    #     - name: 看 FAQ
-    #       url: faqs/
-    #     - name: 看 本站源码
-    #       url: https://github.com/xaoxuu/volantis-docs/
-    #     - name: 提 Issue
-    #       url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
-    # - name: hr
-    # - name: 公告和测试博文
-    #   url: archives/
-    # - name: 示例博客
-    #   url: examples/
-    # - name: 特别感谢
-    #   url: contributors/
-    # - name: 热门文章
-    #   icon: fas fa-fire # 无url的为不可点击项
-    # - name: 背景音乐
-    #   icon: fas fa-compact-disc
