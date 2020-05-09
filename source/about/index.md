@@ -1,9 +1,15 @@
 ---
 layout: page
 title: 个人简介
+sidebar: [blogger, toc]
 meta:
   header: [centertitle]
-sidebar: [blogger, toc]
+  footer: [btns]
+btns:
+  repo: https://github.com/wongqingbin/blog
+  bug: https://github.com/wongqingbin/blog/issues
+  doubt: https://github.com/wongqingbin/blog/issues
+  idea: https://github.com/wongqingbin/blog/issues
 ---
 
 这是摘要

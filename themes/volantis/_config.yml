@@ -75,6 +75,8 @@ style:
       # url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
       # weight: normal
       # style: normal
+
+  # BLOG/_config.yml 启用cdn后暗黑模式无法使用暗黑主题
   color: # 整个color默认为注释(白色主题)，去掉注释后(黑暗主题)
     site: '#21232F' # Website background color
     site_inner: '#fff' # Text color inside the website background
@@ -446,7 +448,7 @@ plugins:
   busuanzi: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
 
   # npm i --save hexo-wordcount
-  wordcount: #true
+  wordcount: true
 
   ######## Plugins for ...
   # Button Ripple Effect
