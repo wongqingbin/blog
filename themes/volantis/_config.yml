@@ -100,7 +100,7 @@ cover:
   scheme: docs # docs, blog
   display:
     home: true
-    archive: false
+    archive: true
     others: false # can be written in front-matter 'cover: true'
   logo: https://cdn.jsdelivr.net/gh/wongqingbin/PicGo/myhead.png # https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/256/google_logo.png
   title: Frieza
