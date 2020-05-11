@@ -17,4 +17,5 @@ btns:
 <!-- more -->
 
 这是正文
-wGodeLike
+
+<br><br>{% btn large center, 联系博主, https://github.com/wongqingbin/blog , fas fa-paper-plane %}
