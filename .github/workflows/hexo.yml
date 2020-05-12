@@ -12,21 +12,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
     
     steps:
-      - uses: actions/checkout@master # 拉取博客最新源文件
+    - uses: actions/checkout@master # 拉取博客最新源文件
 
-      - name: Use Node.js 12.x # 指定 Node.js 版本
-        uses: actions/setup-node@master
-        with:
-          node-version: 12.x
+    - name: Use Node.js 12.x # 指定 Node.js 版本
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
 
-      - name: Setup Hexo env # 初始化 Hexo 环境
-        run: |
-          npm install hexo-cli -g
-          npm install
-      - name: test
-      - run: node -v && npm -v
+    - name: Setup Hexo env # 初始化 Hexo 环境
+      run: |
+        npm install hexo-cli -g
+        npm install
+    - name: test
+    - run: node -v && npm -v
 
       #- name: Setup Deploy Private Key
       #  env:
