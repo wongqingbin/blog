@@ -18,12 +18,16 @@ jobs:
         node-version: [10.x, 12.x]
     
     steps:
-    - uses: actions/checkout@master # 拉取博客最新源文件
-
-    - name: Use Node.js 12.x # 指定 Node.js 版本
-      uses: actions/setup-node@master
-      with:
-        node-version: 12.x
+#     - uses: actions/checkout@master # 拉取博客最新源文件
+#     - name: Use Node.js 12.x # 指定 Node.js 版本
+#       uses: actions/setup-node@master
+#       with:
+#         node-version: 12.x
+#     - uses: actions/checkout@v2
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: ${{ matrix.node-version }}
 
     - name: Setup Hexo env # 初始化 Hexo 环境
       run: |
