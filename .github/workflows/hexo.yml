@@ -20,11 +20,18 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
+    - name: Use Node.js 12.x # 指定 Node.js 版本
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Setup Hexo env # 初始化 Hexo 环境
+      run: |
+        npm install hexo-cli -g
+        npm install
+        node -v && npm -v
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
