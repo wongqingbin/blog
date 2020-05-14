@@ -7,7 +7,7 @@ name: Hexo Deploy CI
 on:
   push:
     branches: [ master ]
-  pull_request:
+  repository_dispatch:
     branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -32,22 +32,22 @@ jobs:
         npm install hexo-cli -g
         npm install
     
-#     - name: Setup Deploy Private Key
-#       env:
-#         HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-#       run: |
-#         mkdir -p ~/.ssh/
-#         echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
-#         chmod 600 ~/.ssh/id_rsa
-#         ssh-keyscan github.com >> ~/.ssh/known_hosts
+    - name: Setup Deploy Private Key
+      env:
+        HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
         
-#     - name: Setup Git Infomation
-#       run: | 
-#         git config --global user.name 'Github用户名' 
-#         git config --global user.email 'Github注册邮箱'
+    - name: Setup Git Infomation
+      run: | 
+        git config --global user.name 'wongqingbin' 
+        git config --global user.email '714227638@qq.com'
 
-#     - name: Deploy Hexo 
-#       run: |
-#         hexo clean
-#         hexo generate 
-#         hexo deploy
+    - name: Deploy Hexo 
+      run: |
+        hexo clean
+        hexo generate 
+        hexo deploy
