@@ -46,10 +46,6 @@ jobs:
         git config --global user.name 'wongqingbin'
         git config --global user.email '714227638@qq.com'
 
-    # - name: Setup expect Spawn
-    #   run: | 
-    #     sudo apt-get install tcl tk expect
-
     - name: Deploy Hexo 
       run: | 
         hexo clean
