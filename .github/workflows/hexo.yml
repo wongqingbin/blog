@@ -40,9 +40,11 @@ jobs:
         echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
-        
+        ssh -T git@github.com
+
     - name: Setup Git Infomation
       run: | 
+        git --version
         git config --global user.name 'wongqingbin' 
         git config --global user.email '714227638@qq.com'
 
