@@ -10,12 +10,13 @@ keywords:
 author: Wang QingBin
 language: zh-CN
 timezone: 'Asia/Shanghai'
+avatar: https://cdn.jsdelivr.net/gh/wongqingbin/PicGo/myhead.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://wongqingbin.github.io # http://yoursite.com
 root: /
-permalink: :category/:id/ # :year/:month/:day/:title/
+permalink: :id/  # :category/:id/ # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,7 +30,13 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render:  # #########################################
+  - README.md
+  - manifest.json
+  - start
+  - CNAME
+  - robots.txt
+  - assets/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -95,18 +102,87 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 
+###############################################################################
+###############################################################################
+###############################################################################
+
 theme: volantis
 # 网站图标，更多尺寸等图标请使用import方式批量导入
 favicon: https://cdn.jsdelivr.net/gh/wongqingbin/PicGo/favicon.ico
+import:  # 全局导入
+  meta:
+  - "<meta name='theme-color' content='#FFFFFF'>"
+  - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
+  - "<meta name='msapplication-config' content='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/browserconfig.xml'>"
+  link:
+  - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico'>"
+  - "<link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/favicon-32x32.png'>"
+  - "<link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/apple-touch-icon.png'>"
+  - "<link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/safari-pinned-tab.svg'>"
+  - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/site.webmanifest'>"
+  # script:
+
 # 开启cdn加速cdn.jsdelivr.net
 use_cdn: true # 启用cdn后暗黑模式无法使用
 
-offline: # npm i hexo-offline --save
+offline:  # npm i hexo-offline --save
+  maximumFileSizeToCacheInBytes: 10485760
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
   runtimeCaching:
     - urlPattern: /*
       handler: cacheFirst
       options:
         origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdnjs.cloudflare.com
+
+# 图片懒加载
+# lazyload:  npm install hexo-lazyload-image --save  hexo-fs
+#   enable: true
+#   onlypost: false # optional
+#   loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg  # optional eg ./images/loading.gif
+  # isSPA: false # optional
+
+# 压缩文件  npm install hexo-all-minifier --save
+all_minifier: false
+
+# SEO优化
+nofollow:  # npm install hexo-autonofollow --save
+  enable: true
+  exclude:
+  - volantis.js.org
+  - wongqingbin.github.io
+
+# https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:  # npm install hexo-generator-seo-friendly-sitemap --save
+  path: sitemap.xml
+  tag: false
+  category: false
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: false
+  modifyAnchors: 0
+  autolink: true
+  sanitizeUrl: false
+  headerIds: true
+  prependRoot: false
+  external_link:
+    enable: true
+    exclude: []
+    nofollow: true
+
+###############################################################################
+###############################################################################
+###############################################################################
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -116,3 +192,4 @@ deploy:
     github: git@github.com:wongqingbin/wongqingbin.github.io.git # https://github.com/wongqingbin/wongqingbin.github.io.git
     gitee: git@gitee.com:wongqingbin/wongqingbin.git
   branch: master
+  message: "Github CI Auto Builder at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
