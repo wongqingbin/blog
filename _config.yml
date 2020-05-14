@@ -98,13 +98,15 @@ ignore:
 theme: volantis
 # 网站图标，更多尺寸等图标请使用import方式批量导入
 favicon: https://cdn.jsdelivr.net/gh/wongqingbin/PicGo/favicon.ico
-# use_cdn: true # 启用cdn后暗黑模式无法使用
-# offline: # npm i hexo-offline --save 暂时不兼容@hexo4.2.0版本
-#   runtimeCaching:
-#     - urlPattern: /*
-#       handler: cacheFirst
-#       options:
-#         origin: cdn.jsdelivr.net
+# 开启cdn加速cdn.jsdelivr.net
+use_cdn: true # 启用cdn后暗黑模式无法使用
+
+offline: # npm i hexo-offline --save
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
