@@ -140,6 +140,10 @@ offline:  # npm i hexo-offline --save
       handler: cacheFirst
       options:
         origin: cdnjs.cloudflare.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: i.loli.net
 
 # 图片懒加载
 # lazyload:  npm install hexo-lazyload-image --save  hexo-fs
