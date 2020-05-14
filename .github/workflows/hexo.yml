@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # [self-hosted, linux, ARM32]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -45,11 +45,12 @@ jobs:
     - name: Setup Git Infomation
       run: | 
         git --version
-        git config --global user.name 'wongqingbin' 
+        git config --global user.name 'wongqingbin'
         git config --global user.email '714227638@qq.com'
 
     - name: Deploy Hexo 
-      run: |
+      run: | 
+        ls /usr/bin | grep expect
         hexo clean
-        hexo generate 
+        hexo generate
         hexo deploy
