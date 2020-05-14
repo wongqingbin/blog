@@ -20,3 +20,8 @@ hexo generate
 hexo deploy
 # hexo g -d
 ```
+<br>
+
+### 免费图床
+ - ms.ms
+ - cdn.jsdelivr.net
