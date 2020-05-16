@@ -23,5 +23,7 @@ hexo deploy
 <br>
 
 ### 免费图床
- - ms.ms
+ - github
  - cdn.jsdelivr.net
+ - gitee
+ - PicGo

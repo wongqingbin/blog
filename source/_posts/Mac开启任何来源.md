@@ -18,6 +18,6 @@ sudo spctl --status --master-disable
 sudo spctl --status --master-enable
 ```
 
-![任何来源.png](https://i.loli.net/2020/05/15/Gjn8smoAy6iFZuW.png)
+![任何来源.png](https://gitee.com/wongqingbin/Frieza/raw/master/image/spctl.png)
 
 <br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}

@@ -72,6 +72,6 @@ module.exports = {
 npm i --save-dev babel-plugin-import
 ```
 
-![advp.png](https://i.loli.net/2020/05/15/8a5IGV2lxuYLh9N.png)
+![advp.png](https://gitee.com/wongqingbin/Frieza/raw/master/image/advp.png)
 
 <br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
