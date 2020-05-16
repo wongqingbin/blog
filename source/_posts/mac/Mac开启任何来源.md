@@ -1,6 +1,6 @@
 ---
 title: Mac开启任何来源
-tags: default
+tags: mac
 categories: Mac
 references:
   - name: null

@@ -13,12 +13,24 @@ deploy:
   branch: master
 ```
 
-```shell
+```bash
 # hexo部署 hexo clean && hexo deploy
 hexo clean
 hexo generate
 hexo deploy
 # hexo g -d
+```
+
+```bash
+# 新建文章
+hexo new post -p mac/Finder "Finder"
+# post: 建立post类型模板的文章，source/_post为默认主目录，可省略不写
+# -p --path: 指定路径和文件名称 mac/ 路径，Finder为.md名称
+# "Finder": 文章标题title
+
+# 新建页面
+hexo new page -p about/me "about me"
+# source/ 为主目录，page不可省略
 ```
 <br>
 
