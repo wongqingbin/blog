@@ -27,3 +27,5 @@ hexo deploy
  - cdn.jsdelivr.net
  - gitee
  - PicGo
+ - 博主个人图床地址：https://github.com/wongqingbin/PicGo
+ - 博主个人图床地址(国内)：https://gitee.com/wongqingbin/Frieza
