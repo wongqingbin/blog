@@ -4,27 +4,20 @@ news: # 公告
   header:
     icon: fas fa-bullhorn fa-fw # fas fa-exclamation-triangle
     title: 本站公告
-  # rows:
-  #   - name: 关于主题与文档的更新
-  #     icon: fas fa-info-circle
-  #     url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215
-  #   - name: 升级小助手
-  #     icon: fas fa-angle-double-up
-  #     url: /v2/getting-started/#升级小助手
+  rows:
+    - name: "博主: Wang QingBin"
+      icon: fab fa-github  # fas fa-info-circle 
+      url: https://github.com/wongqingbin
+    # - name: 升级小助手
+    #   icon: fas fa-angle-double-up
+    #   url: /v2/getting-started/#升级小助手
 
-# 通用列表部件
-wiki-hexo-theme:
-  class: list
+group-adb:
+  class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
-    icon: fas fa-chevron-left
-    title: Hexo Themes
-    url: /wiki/
-  rows:
-    - name: Volantis for Hexo
-      url: /wiki/volantis/
-    - name: Resume for Hexo
-      url: /wiki/resume/
+    icon: fas fa-list-alt
+    title: Android SDK
 
 # 通用文本部件
 # repos:
