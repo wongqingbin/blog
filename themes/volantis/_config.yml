@@ -100,7 +100,7 @@ cover:
   scheme: docs # docs, blog
   display:
     home: true
-    archive: true
+    archive: false # 控制归档页面(时间轴页面) 是否显示cover
     others: false # can be written in front-matter 'cover: true'
   logo: https://cdn.jsdelivr.net/gh/wongqingbin/PicGo/myhead.png # https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/256/google_logo.png
   title: Frieza
@@ -220,16 +220,16 @@ meta:
   # 文章标签
   tags:
     icon: fas fa-hashtag
-  # # 分享
-  # share:
-  #   - id: qq
-  #     img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png
+  # 分享
+  share:
+    - id: qq
+      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png
   #   - id: qzone
   #     img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png
   #   - id: weibo
   #     img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png
-    # - id: qrcode # 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
-    #   img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/wechat.png
+    - id: qrcode # 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
+      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/wechat.png
     # - id: telegram
     #   img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/telegram.png
   # 链接

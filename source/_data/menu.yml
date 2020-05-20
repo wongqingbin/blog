@@ -9,7 +9,7 @@
 - name: 标签
   icon: fas fa-tags
   url: tags/
-- name: 归档
+- name: 时间轴
   icon: fas fa-archive
   url: archives/
 - name: 更多
@@ -22,6 +22,9 @@
       url: https://github.com/wongqingbin/blog
       icon: fab fa-github
       target: _blank
+    - name: 留言板
+      icon: fas fa-question-circle fa-fw
+      url: msgboard/
     - name: 友情链接
       # url: friends/ # 无url的为不可点击项
       icon: fas fa-link
