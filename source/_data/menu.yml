@@ -18,6 +18,10 @@
     - name: 关于小站
       url: about/
       icon: fas fa-info-circle
+    - name: GitHub图床
+      url: https://github.com/wongqingbin/PicGo
+      icon: fab fa-github
+      target: _blank
     - name: 博客源码
       url: https://github.com/wongqingbin/blog
       icon: fab fa-github
