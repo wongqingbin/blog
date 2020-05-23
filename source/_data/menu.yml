@@ -12,6 +12,18 @@
 - name: 时间轴
   icon: fas fa-archive
   url: archives/
+- name: 系列文章
+  icon: 
+  rows:
+    - name: Android SDK
+      url: adb/
+      # icon:
+    - name: Python
+      # url:
+      # icon:
+    - name: Jmeter
+      # url:
+      # icon:
 - name: 更多
   icon: fas fa-ellipsis-v
   rows:

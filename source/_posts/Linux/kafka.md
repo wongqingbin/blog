@@ -35,5 +35,50 @@ bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 -- topic test --from-beginning
 ```
 
+## 启动zookeeper
+```bash
+# 1
+bin/zookeeper-server-start.sh config/zookeeper.properties
+# 2 守护进程启动方式 防止挂掉
+bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+```
+
+## 启动kafka
+```bash
+# 1
+bin/kafka-server-start.sh config/server.properties
+# 2 守护进程启动方式 防止挂掉
+bin/kafka-server-start.sh -daemon config/server.properties
+```
+
+## 查看topic列表
+```bash
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+```
+
+## 创建topic
+```bash
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+```
+
+## 生产者
+```bash
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+```
+
+## 消费者
+```bash
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+```
+
+## 关闭kafka
+```bash
+bin/kafka-server-stop.sh
+```
+
+## 关闭zookeeper
+```bash
+bin/zookeeper-server-stop.sh
+```
 
 <br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}

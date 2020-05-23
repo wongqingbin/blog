@@ -27,6 +27,32 @@ vim /etc/mongod.conf
 service mongod start/stop/restart
 ```
 
+## 配置
+```bash
+# 1.修改数据和日志的存储位置
+# bin目录下增加mongodb.conf文件
+# 内容：
+port=27017
+dbpath=/usr/local/mongodb/data/
+logpath=/usr/local/mongodb/log/mongodb.log
+fork = true
+
+# 释义：
+# port: 数据库服务使用端口
+# dbpath: 数据存放的文件位置
+# logpath: 日志文件的存放位置
+# fork: 后台守护进程运行
+
+# 启动命令：
+./mongod -f mongodb.conf
+
+# 关闭方式：
+./mongo
+# >
+# >use admin
+# >db.shutdownServer()
+```
+
 ## 卸载
 ```bash
 # 卸载
