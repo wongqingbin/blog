@@ -13,7 +13,7 @@
   icon: fas fa-archive
   url: archives/
 - name: 系列文章
-  icon: 
+  icon: fas fa-ellipsis-v
   rows:
     - name: Android SDK
       url: adb/
