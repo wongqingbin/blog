@@ -41,3 +41,6 @@ hexo new page -p about/me "about me"
  - PicGo
  - 博主个人图床地址：https://github.com/wongqingbin/PicGo
  - 博主个人图床地址(国内)：https://gitee.com/wongqingbin/Frieza
+ 
+### 使用开源项目申请jetbrains的免费linces
+ - https://www.jetbrains.com/shop/eform/opensource?product=ALL
