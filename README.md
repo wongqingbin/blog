@@ -1,7 +1,7 @@
 ![Hexo Deploy CI](https://github.com/wongqingbin/blog/workflows/Hexo%20Deploy%20CI/badge.svg?branch=master&event=push)
 ![Hexo Deploy CI](https://github.com/wongqingbin/blog/workflows/Hexo%20Deploy%20CI/badge.svg?branch=master&event=repository_dispatch)
 
-https://wongqingbin.github.io/
+<https://wongqingbin.github.io/>
 
 ```YAML
 # _conflg.yml
@@ -32,15 +32,18 @@ hexo new post -p mac/Finder "Finder"
 hexo new page -p about/me "about me"
 # source/ 为主目录，page不可省略
 ```
+
 <br>
 
 ### 免费图床
- - github
- - cdn.jsdelivr.net
- - gitee
- - PicGo
- - 博主个人图床地址：https://github.com/wongqingbin/PicGo
- - 博主个人图床地址(国内)：https://gitee.com/wongqingbin/Frieza
- 
+
+- github
+- cdn.jsdelivr.net
+- gitee
+- PicGo
+- 博主个人图床地址：<https://github.com/wongqingbin/PicGo>
+- 博主个人图床地址(国内)：<https://gitee.com/wongqingbin/Frieza>
+
 ### 使用开源项目申请jetbrains的免费linces
- - https://www.jetbrains.com/shop/eform/opensource?product=ALL
+
+- <https://www.jetbrains.com/shop/eform/opensource?product=ALL>
