@@ -12,6 +12,7 @@ scp [可选参数] file_source file_target
 <!-- more -->
 
 ## 从本地复制到远程Linux
+
 ```bash
 # 复制文件1 (自动重命名)
 scp local_file remote_username@remote_ip:remote_file
@@ -21,6 +22,7 @@ scp local_file remote_username@remote_ip:remote_folder
 ```
 
 ## 从远程Linux复制到本地
+
 ```bash
 # 复制文件1 (自动重命名)
 scp remote_username@remote_ip:remote_file local_file
@@ -30,6 +32,7 @@ scp remote_username@remote_ip:remote_folder local_folder
 ```
 
 ## 复制文件夹
+
 ```bash
 # scp命令后加 -r 参数即可
 scp -r
@@ -55,4 +58,4 @@ scp [可选参数] file_source file_target
 # -S program： 指定加密传输时所使用的程序。此程序必须能够理解ssh(1)的选项。
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

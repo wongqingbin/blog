@@ -8,6 +8,7 @@ CentOS 7 安装 nginx
 <!-- more -->
 
 ## 安装
+
 ```bash
 # 安装依赖包 c编译gcc依赖
 yum install gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
@@ -29,6 +30,7 @@ cd /usr/local/nginx/sbin/
 ```
 
 ## 配置文件路径说明
+
 ```bash
 # ./configure           \
 # --prefix=/etc/nginx                     \
@@ -40,4 +42,4 @@ cd /usr/local/nginx/sbin/
 # --lock-path=/var/run/nginx.lock
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

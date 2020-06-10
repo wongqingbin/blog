@@ -10,6 +10,7 @@ ant-design-vue-pro 使用脚手架 vue-cli 创建项目
 <!-- more -->
 
 ## vue create <my-project-name>
+
 ```bash
 #npm install -g @vue/cli  vue --version  @vue/cli 4.3.1
 vue create <my-project-name>
@@ -25,13 +26,17 @@ vue create <my-project-name>
 # ? Save this as a preset for future projects? Yes
 # ? Save preset as: a-d-v-p
 ```
+
 ## Less、history
+
 ```bash
 # Less: css加载器使用less，方便之后做主题颜色修改配置
 # history: 最终路由中不带#号，漂亮的url路由
 # In dedicated config files: 配置文件不堆积在package.json中；使用单独的配置文件vue.confi.js需手动新建
 ```
+
 ## npm run serve
+
 ```bash
 # 验证第一步是否创建成功
 cd <my-project-name>
@@ -40,7 +45,9 @@ npm run serve
 # 第二步 安装插件ant-design-vue 和 moment
 npm i ant-design-vue moment
 ```
+
 ## vue.config.js
+
 ```bash
 # webpack配置之less-load引入
 mkdir vue.config.js
@@ -74,4 +81,4 @@ npm i --save-dev babel-plugin-import
 
 ![advp.png](https://gitee.com/wongqingbin/Frieza/raw/master/image/advp.png)
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

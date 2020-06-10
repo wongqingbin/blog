@@ -26,4 +26,5 @@ celery 和 redis 之间交互的基本原理
 2、当celery key中的任务成功被worker认领并且执行成功，celery会向配置好的bachend中，写入以task_id为key。
 3、所以，可以通过查看bachend中是否有以task_id为key的对象来判断task是否执行成功。
 ```
+
 <br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

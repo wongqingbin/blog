@@ -8,6 +8,7 @@ Jenkins部署 - 使用shell脚本后台守护进程运行
 <!-- more -->
 
 ## 示例
+
 ```bash
 #!/bin/bash
 
@@ -21,13 +22,13 @@ BUILD_ID=dontKillMe
 pid=`ps -ef | grep python3 | grep -v grep | awk -F ' ' '{print $2}'`
 for p in ${pid[@]};
 do
-	kill -9 $p
+ kill -9 $p
 done
 
 # 删除目录
 if [ -d /root/Jenkins/production ];
 then
-	rm -rf /root/Jenkins/production
+ rm -rf /root/Jenkins/production
 fi
 
 # 创建新部署目录
@@ -43,7 +44,7 @@ git clone <url>
 cd <proj_path>
 
 # 启动  BUILD_ID=dontKillMe  保证程序后台运行不杀死  和 nohub、& 一同使用
-nohup python3 app.py &
+nohup python3 app.py >/dev/null 2>&1 &
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

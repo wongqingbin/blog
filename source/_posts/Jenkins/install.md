@@ -7,6 +7,7 @@ date: 2020-05-24 01:00:05
 Mac使用Homebrew包管理器安装并配置管理Jenkins
 <!-- more -->
 ## mac安装Jenkins
+
 ```bash
 # 1. Mac安装JDK并配置环境变量
 # 2.安装Jenkins
@@ -21,9 +22,9 @@ brew services restart jenkins
 # 将上面两个plist中的httpListenAddress后的ip地址，修改为本机IP或者0.0.0.0即可。
 
 # 取消开机启动
-sudo launchctl unload -w /Library/LaunchDaemons/org.jenkins-ci.plist 
+sudo launchctl unload -w /Library/LaunchDaemons/org.jenkins-ci.plist
 # 设置开机启动
-sudo launchctl load -w /Library/LaunchDaemons/org.jenkins-ci.plist 
+sudo launchctl load -w /Library/LaunchDaemons/org.jenkins-ci.plist
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

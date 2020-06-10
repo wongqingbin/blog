@@ -10,6 +10,7 @@ date: 2020-05-17 02:27:16
 Mac终端terminal自动补全之忽略大小写
 <!-- more -->
 ## 自动补全忽略大小写（terminal）
+
 ```bash
 # 终端中输入以下命令：
 $ nano .inputrc
@@ -21,4 +22,4 @@ TAB: menu-complete
 # PS: 需重启终端生效
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

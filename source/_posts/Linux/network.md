@@ -8,6 +8,7 @@ CentOS 7网络配置(Mac虚拟机下的共享配置)
 <!-- more -->
 
 ## 编辑网络配置文件
+
 ```bash
 # 编辑配置文件ifcfg-eth0 ifcfg-eth1 ...
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -27,6 +28,7 @@ systemctl restart network
 ```
 
 ## 参数解读
+
 ```bash
 # 注：这里面的IP地址，子网掩码，GATE ，DNS都按照主机的配置。
 # 之后，重启一下虚拟机应该就可以。
@@ -53,4 +55,4 @@ NM_CONTROLLED=no
 ####################################
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

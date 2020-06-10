@@ -8,11 +8,13 @@ CentOS 7 安装 JDK1.8 并配置环境变量
 <!-- more -->
 
 ## yum安装jdk
+
 ```bash
 yum install java-1.8.0-openjdk*
 ```
 
 ## 配置环境变量
+
 ```bash
 vim ~/.bash_profile
 
@@ -26,8 +28,9 @@ source ~/.bash_profile
 ```
 
 ## 验证
+
 ```bash
 java --version
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

@@ -8,6 +8,7 @@ sidebar: [group-adb, blogger, toc]
 date: 2020-05-17 16:02:45
 ---
 ## win
+
 ```bash
 # 什么进程占用了 5037
 netstat -ano | findstr "5037"
@@ -20,7 +21,9 @@ tasklist | findstr "21152"
 # 杀进程
 taskkill /f /pid 21152
 ```
+
 ## mac
+
 ```bash
 # 什么进程占用了 5037
 netstat -an|grep 5037

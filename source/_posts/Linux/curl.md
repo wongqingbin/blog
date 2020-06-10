@@ -8,6 +8,7 @@ date: 2020-05-20 21:58:19
 <!-- more -->
 
 ## GET 请求示例
+
 ```bash
 # GET请求 -i
 curl -i <url>
@@ -27,6 +28,7 @@ curl -i <url>
 ```
 
 ## POST 请求示例
+
 ```bash
 # POST请求示例 -i
 curl -i -H "Content-Type: application/json" -X POST -d '{"data":"data"}' <url>
@@ -45,6 +47,7 @@ curl -i -H "Content-Type: application/json" -X POST -d '{"data":"data"}' <url>
 ```
 
 ## curl 带密码请求
+
 ```bash
 # -u username:password -i url
 curl -u miguel:python -i <url>
@@ -63,4 +66,4 @@ curl -u miguel:python -i <url>
 # }
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

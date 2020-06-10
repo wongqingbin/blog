@@ -8,6 +8,7 @@ Interview
 <!-- more -->
 
 ## 基础篇
+
 ```python
 # 1. 冒泡排序
 def bubble_sort(data):
@@ -22,6 +23,7 @@ def bubble_sort(data):
         print('第{0}次排序: {1}'.format(len(data)-i, data))
     return data
 ```
+
 ```python
 # 2. 装饰器单例
 def singleton(cls, *args, **kwargs):
@@ -32,6 +34,7 @@ def singleton(cls, *args, **kwargs):
         return _instance.get(cls)
     return get_instance
 ```
+
 ```sql
 ################ sql
 # 添加
@@ -46,6 +49,7 @@ select * from tablename where
 # 分组
 group by 字段名 having avg()
 ```
+
 ```bash
 ############# Linux
 # 查看进程
@@ -147,6 +151,7 @@ wc -l a/b/A.txt  # 统计文件行数
 du -sh A.txt   # 查看文件大小
 du -sh /a/b    # 查看目录大小
 ```
+
 ```text
     测试用例八大要素
 用例编号
@@ -158,6 +163,7 @@ du -sh /a/b    # 查看目录大小
 所属模块
 预期结果
 ```
+
 ```text
   黑盒测试用例设计方法包括等价类划分法、边界值分析法、错误推测法、因果图法、判定表驱动法、正交试验设计法、功能图法、场景图法等。
 
@@ -166,5 +172,4 @@ du -sh /a/b    # 查看目录大小
   测试人员经常用到的有等价类，边界值，场景法，因果图法。
 ```
 
-
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

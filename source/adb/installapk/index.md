@@ -9,6 +9,7 @@ date: 2020-05-17 20:35:53
 ---
 
 ## 安装(adb install)
+
 ```bash
 # 普通安装
 adb install <apk_path>
@@ -27,6 +28,7 @@ adb -s <devices_id> install <apk_path>
 ```
 
 ## 卸载(adb uninstall)
+
 ```bash
 # 普通卸载
 adb uninstall <package_name>  # 例如: com.jd.xxx
@@ -36,6 +38,7 @@ adb -s <devices_id> uninstall <package_name>  # 例如: com.jd.xxx
 ```
 
 ## 自动化下的安装卸载(pm命令)
+
 ```bash
 # 安装apk
 pm install <device_apk_path>  # device_apk_path为手机路径 /sdcard

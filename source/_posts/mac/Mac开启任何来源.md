@@ -11,6 +11,7 @@ Mac在macOS系统下，系统偏好设置中的“安全与隐私”默认已经
 <!-- more -->
 
 ## 开启权限命令
+
 ```bash
 # 显示
 sudo spctl --status --master-disable
@@ -20,4 +21,4 @@ sudo spctl --status --master-enable
 
 ![任何来源.png](https://gitee.com/wongqingbin/Frieza/raw/master/image/spctl.png)
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

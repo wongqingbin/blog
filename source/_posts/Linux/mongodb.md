@@ -8,6 +8,7 @@ CentOS 7 安装 mongodb
 <!-- more -->
 
 ## 安装
+
 ```bash
 # 创建 repo文件
 touch /etc/yum.repos.d/mongodb-org-4.0.repo
@@ -21,13 +22,14 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
 # 安装
 sudo yum install -y mongodb-org
-# 编辑配置文件: 修改绑定地址为0.0.0.0 
+# 编辑配置文件: 修改绑定地址为0.0.0.0
 vim /etc/mongod.conf
 # 启动、停止、重启
 service mongod start/stop/restart
 ```
 
 ## 配置
+
 ```bash
 # 1.修改数据和日志的存储位置
 # bin目录下增加mongodb.conf文件
@@ -54,6 +56,7 @@ fork = true
 ```
 
 ## 卸载
+
 ```bash
 # 卸载
 yum erase $(rpm -qa | grep mongodb-org)
@@ -61,4 +64,4 @@ rm -r /var/log/mongodb
 rm -r /var/lib/mongo
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}

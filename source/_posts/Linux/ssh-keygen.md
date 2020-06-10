@@ -10,11 +10,13 @@ ssh秘钥登录特点：1.安全；2.免输密码。
 <!-- more -->
 
 ## 安装
+
 ```bash
 # ssh-keygen为ssh自带命令，Mac、Linux、Ubuntu等都自带
 ```
 
 ## 检查是否配置过ssh服务
+
 ```bash
 # mac、linux、ubuntu
 cd ~/.ssh
@@ -24,12 +26,14 @@ ls
 ```
 
 ## 配置ssh
+
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # 后面全部enter，不选择任何选项，最后生成的秘钥为无密码密钥
 ```
 
 ## 查看公钥和私钥
+
 ```bash
 # 查看公钥
 cat ~/.ssh/id_rsa.pub
@@ -39,6 +43,7 @@ cat ~/.ssh/id_rsa
 ```
 
 ## 服务器配置公钥
+
 ```bash
 # 以github为例
 # 配置路径：Setting -> SSH and GPG keys -> New SSH key or Add SSH key
@@ -48,9 +53,10 @@ cat ~/.ssh/id_rsa
 ```
 
 ## 测试是否连通
+
 ```bash
 # 以github为例
 ssh -T git@github.com
 ```
 
-<br><br>{% btn large center, 向博主反馈问题, https://github.com/wongqingbin/blog/issues , fas fa-paper-plane %}
+<br><br>{% btn large center, 向博主反馈问题, <https://github.com/wongqingbin/blog/issues> , fas fa-paper-plane %}
