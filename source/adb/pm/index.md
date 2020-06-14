@@ -7,6 +7,17 @@ order: 4
 sidebar: [group-adb, blogger, toc]
 ---
 
+## 导出已安装APP的apk文件
+
+```bash
+# 获取包名
+adb shell pm list package
+# 获取已安装APP的apk文件路径
+adb shell pm path <package>
+# 导出apk文件
+adb pull <path> /Destkop
+```
+
 ## 获取设备app包名称列表
 
 ```bash
@@ -57,7 +68,7 @@ adb shell pm uninstall <package_name>
 
 ## 清除APP数据和缓存
 
-```
+```bash
 adb shell pm clear <package_name>
 ```
 
