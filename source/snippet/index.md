@@ -2,7 +2,6 @@
 layout: page
 title: 简介
 group: group-snippet
-order: 0
 sidebar: [group-snippet, blogger, toc]
 body: [article, comments] 
 date: 2020-06-14 16:56:56

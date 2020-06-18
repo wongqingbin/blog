@@ -9,6 +9,9 @@
     - name: Android SDK
       url: adb/
       icon: fas fa-file-alt fa-fw
+    - name: Code Snippet
+      url: snippet/
+      icon: fas fa-file-alt fa-fw
     - name: Python
       # url:
       icon: fas fa-file-alt fa-fw
