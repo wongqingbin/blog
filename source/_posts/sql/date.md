@@ -11,8 +11,11 @@ SQL查询之指定日期内的数据。
 ## mysql有关日期条件的查询语句
 
 ```sql
+#####################################
+# 高版本使用CURDATE()  低版本使用NEW() #
+####################################
 # 查询今天 当天
-SELECT * FROM `table_name` WHERE TO_DAYS(col_name)=TO_DAYS(NEW());  # CURDATE()或NEW()
+SELECT * FROM `table_name` WHERE TO_DAYS(col_name)=TO_DAYS(NEW());
 
 # 获取本周
 SELECT * FROM `table_name` WHERE YEARWEEK(DATE_FORMAT(col_name,'%Y-%m-%d'))=YEARWEEK(NEW());
