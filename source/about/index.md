@@ -34,13 +34,12 @@ btns:
 * Vue
 * Shell
 * Java
-* 工具类：MySQL、Redis、appium、selenium、adb、Charles、fiddler等
 
 ## 个人成就
 
 * 个人博客：<https://github.com/wongqingbin/blog>
 * GitHub：<https://github.com/wongqingbin>
-* 开源软件：<https://github.com/52clover>
+* 开源项目：<https://github.com/52clover>
 
 ## 项目经历
 
