@@ -23,7 +23,7 @@ hexo deploy
 
 ```bash
 # 新建文章
-hexo new post -p mac/Finder "Finder"
+hexo new post -p python/Finder "Finder"
 # post: 建立post类型模板的文章，source/_post为默认主目录，可省略不写
 # -p --path: 指定路径和文件名称 mac/ 路径，Finder为.md名称
 # "Finder": 文章标题title
