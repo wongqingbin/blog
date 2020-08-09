@@ -1,8 +1,13 @@
 ---
-title: pip修改源
-tags: pip
-categories: python
-date: 2020-08-09 18:59:54
+layout: page
+title: 1.pip更换国内源
+group: group-snippet
+order: 1
+sidebar:
+  - group-snippet
+  - blogger
+  - toc
+date: 2020-08-09 20:12:42
 ---
 pip修改国内源 requirements.txt
 <!-- more -->

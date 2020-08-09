@@ -6,17 +6,26 @@
 - name: 系列文章
   icon: fas fa-book fa-fw
   rows:
-    - name: Android SDK
-      url: adb/
-      icon: fas fa-file-alt fa-fw
-    - name: Code Snippet
+    - name: Python
       url: snippet/
       icon: fas fa-file-alt fa-fw
-    - name: Python
+    - name: Java
       # url:
       icon: fas fa-file-alt fa-fw
-    - name: Jmeter
-      # url:
+    - name: SQL
+      url: sql/
+      icon: fas fa-file-alt fa-fw
+    - name: Linux
+      url: linux/
+      icon: fas fa-file-alt fa-fw
+    - name: Appium
+      url: appium/
+      icon: fas fa-file-alt fa-fw
+    - name: Vue
+      url: vue/
+      icon: fas fa-file-alt fa-fw
+    - name: Android SDK
+      url: adb/
       icon: fas fa-file-alt fa-fw
 - name: 分类
   icon: fas fa-folder-open

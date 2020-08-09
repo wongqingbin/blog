@@ -12,6 +12,7 @@ news: # 公告
     #   icon: fas fa-angle-double-up
     #   url: /v2/getting-started/#升级小助手
 
+##################################################
 group-adb:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
@@ -19,12 +20,42 @@ group-adb:
     icon: fas fa-list-alt
     title: Android SDK
 
-group-snippet:
+group-snippet:  # python
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-list-alt
     title: Code Snippet
+
+group-appium:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: Appium
+
+group-vue:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: Vue
+
+group-sql:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: SQL
+
+group-linux:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: Linux
+
+##################################################
 
 # 通用网格部件
 feedback:
