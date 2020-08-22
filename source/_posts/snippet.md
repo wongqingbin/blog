@@ -15,4 +15,4 @@ comments: true
 
 &nbsp;&nbsp;&nbsp;&nbsp;测试开发人员常用的代码小片段分享，致力于实用、易懂、优雅的代码，让代码更加Pythonic。
 
-{% btn large center, Let's Go, /snippet, fas fa-home %}
+{% btn large center, Let's Go, wqb/snippet, fas fa-home %}

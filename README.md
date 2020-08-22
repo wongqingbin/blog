@@ -29,8 +29,8 @@ hexo new post -p python/Finder "Finder"
 # "Finder": 文章标题title
 
 # 新建页面
-hexo new page -p snippet/pip "title"
-hexo new page -p snippet/pip/index "title"
+hexo new page -p wqb/snippet/pip "title"
+hexo new page -p wqb/snippet/pip/index "title"
 # source/ 为主目录，page不可省略
 ```
 

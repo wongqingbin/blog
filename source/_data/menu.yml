@@ -7,22 +7,25 @@
   icon: fas fa-book fa-fw
   rows:
     - name: Python
-      url: snippet/
+      url: wqb/snippet/
       icon: fas fa-file-alt fa-fw
     - name: Java
       # url:
       icon: fas fa-file-alt fa-fw
+    - name: Docker
+      url: wqb/docker/
+      icon: fas fa-file-alt fa-fw
     - name: SQL
-      url: sql/
+      url: wqb/sql/
       icon: fas fa-file-alt fa-fw
     - name: Linux
-      url: linux/
+      url: wqb/linux/
       icon: fas fa-file-alt fa-fw
     - name: Appium
-      url: appium/
+      url: wqb/appium/
       icon: fas fa-file-alt fa-fw
     - name: Vue
-      url: vue/
+      url: wqb/vue/
       icon: fas fa-file-alt fa-fw
     - name: Android SDK
       url: adb/

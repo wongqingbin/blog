@@ -20,12 +20,19 @@ group-adb:
     icon: fas fa-list-alt
     title: Android SDK
 
-group-snippet:  # python
+group-snippet:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-list-alt
     title: Code Snippet
+
+group-docker:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: Docker
 
 group-appium:
   class: group
