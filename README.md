@@ -14,6 +14,13 @@ deploy:
 ```
 
 ```bash
+# hexo本地预览1
+npm run server
+
+# hexo本地预览2
+npm install hexo-cli -g
+hexo server
+
 # hexo部署 hexo clean && hexo deploy
 hexo clean
 hexo generate
