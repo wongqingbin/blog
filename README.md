@@ -4,7 +4,7 @@
 <https://wongqingbin.github.io/>
 
 ```YAML
-# _conflg.yml
+# _config.yml
 deploy:
   type: git
   repo:
