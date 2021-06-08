@@ -7,5 +7,5 @@ meta:
   header: [centertitle]
   footer: []
 sidebar: [blogger, toc]
-body: [article, comments] # , help , comments
+body: [article] # , help , comments
 ---

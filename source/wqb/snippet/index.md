@@ -3,7 +3,7 @@ layout: page
 title: 简介
 group: group-snippet
 sidebar: [group-snippet, blogger, toc]
-body: [article, comments] 
+body: [article] 
 date: 2020-06-14 16:56:56
 meta:
   header: [centertitle]

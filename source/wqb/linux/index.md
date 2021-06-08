@@ -3,7 +3,7 @@ layout: page
 title: 简介
 group: group-linux
 sidebar: [group-linux, blogger, toc]
-body: [article, comments] 
+body: [article] 
 date: 2020-08-09 20:47:19
 meta:
   header: [centertitle]

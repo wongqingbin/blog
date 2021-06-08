@@ -3,7 +3,7 @@ layout: page
 title: 简介
 group: group-docker
 sidebar: [group-docker, blogger, toc]
-body: [article, comments]
+body: [article]
 date: 2020-08-23 01:44:11
 meta:
   header: [centertitle]
